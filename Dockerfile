@@ -24,9 +24,6 @@ ENV BAMBOO_JDBC_DRIVER=com.mysql.jdbc.Driver
 ENV BAMBOO_JDBC_USER=bamboo
 ENV BAMBOO_JDBC_PASSWORD=password
 
-# Logs
-RUN echo %JAVA_HOME%
-
 # Expose the necessary ports
 EXPOSE 8085
 EXPOSE 3306

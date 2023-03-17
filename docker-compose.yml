@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  bamboo-server:
+    build: ./
+    container_name: bamboo-server
+    ports:
+      - 8085:8085
+      - 3308:3306
+    volumes:
+      - ./bamboo-server:/var/atlassian/application-data/bamboo
